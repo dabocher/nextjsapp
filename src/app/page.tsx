@@ -1,95 +1,20 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Link from 'next/link'
+import React from 'react'
+import styles from "./page.module.css";
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <div >
+    <h1>This is the Home Page</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ratione. Quis quia, dicta unde quaerat quisquam reprehenderit neque rem, veritatis labore adipisci nemo laboriosam quae amet est culpa earum asperiores.
+    Totam ducimus perspiciatis voluptatum, laboriosam, pariatur eum dolorem, perferendis doloremque rem natus repellendus. Dolore dolor obcaecati saepe quasi nostrum eligendi eaque reiciendis, esse exercitationem amet atque ipsa adipisci odit eveniet.
+    Omnis cupiditate tempore assumenda porro soluta voluptatem? Autem temporibus ducimus repudiandae placeat accusamus pariatur perferendis ex modi voluptatibus, earum possimus sapiente. Culpa dolores consequuntur vel blanditiis recusandae neque, maxime necessitatibus... porom porom pompero porom pompero porom?</p>
+<div className={styles.wrapper}>
+<Link className='' href={"/dashboard"}>Go to Dashboard ----</Link>
+<Link className='' href={"/another-page"}>Go to Another Page ----</Link></div>
+    </div>
   )
 }
+
+export default HomePage
